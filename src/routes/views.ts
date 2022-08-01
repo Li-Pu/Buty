@@ -1,4 +1,4 @@
-import { FireWork2D } from "../views";
+import React from "react";
 import { ViewInfo, ViewType } from "./types";
 
 
@@ -6,7 +6,7 @@ const Views: Array<ViewInfo> = [{
     title: '2D烟花',
     name: 'firework',
     type: ViewType.TWO_D,
-    component: FireWork2D
+    component: React.lazy(() => import('../views/2d/firework'))
 
 }]
 
