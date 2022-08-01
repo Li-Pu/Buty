@@ -11,6 +11,7 @@ specifiers:
   husky: ^8.0.1
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-router-dom: '6'
   standard-version: ^9.5.0
   typescript: ^4.6.4
   vite: ^3.0.0
@@ -18,6 +19,7 @@ specifiers:
 dependencies:
   react: registry.npmmirror.com/react/18.2.0
   react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
+  react-router-dom: registry.npmmirror.com/react-router-dom/6.3.0_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
   '@commitlint/cli': registry.npmmirror.com/@commitlint/cli/17.0.3
@@ -315,6 +317,15 @@ packages:
       '@babel/plugin-syntax-jsx': registry.npmmirror.com/@babel/plugin-syntax-jsx/7.18.6_@babel+core@7.18.9
       '@babel/types': registry.npmmirror.com/@babel/types/7.18.9
     dev: true
+
+  registry.npmmirror.com/@babel/runtime/7.18.9:
+    resolution: {integrity: sha512-lkqXDcvlFT5rvEjiu6+QYO+1GXrEHRo2LOtS7E4GtX5ESIZOgepqsZBVIj6Pv+a6zqsya9VCgiK1KAK4BvJDAw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/runtime/-/runtime-7.18.9.tgz}
+    name: '@babel/runtime'
+    version: 7.18.9
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: registry.npmmirror.com/regenerator-runtime/0.13.9
+    dev: false
 
   registry.npmmirror.com/@babel/template/7.18.6:
     resolution: {integrity: sha512-JoDWzPe+wgBsTTgdnIma3iHNFC7YVJoPssVBDjiHfNlyt4YcunDtcDOUmfVDfCK5MfdsaIoX9PkijPhjH3nYUw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/template/-/template-7.18.6.tgz}
@@ -2128,6 +2139,14 @@ packages:
       function-bind: registry.npmmirror.com/function-bind/1.1.1
     dev: true
 
+  registry.npmmirror.com/history/5.3.0:
+    resolution: {integrity: sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/history/-/history-5.3.0.tgz}
+    name: history
+    version: 5.3.0
+    dependencies:
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.18.9
+    dev: false
+
   registry.npmmirror.com/homedir-polyfill/1.0.3:
     resolution: {integrity: sha512-eSmmWE5bZTK2Nou4g0AI3zZ9rswp7GRKoKXS1BLUkvPviOqs4YTN1djQIqrXy9k5gEtdLPy86JjRwsNM9tnDcA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/homedir-polyfill/-/homedir-polyfill-1.0.3.tgz}
     name: homedir-polyfill
@@ -3005,6 +3024,33 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  registry.npmmirror.com/react-router-dom/6.3.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-uaJj7LKytRxZNQV8+RbzJWnJ8K2nPsOOEuX7aQstlMZKQT0164C+X2w6bnkqU3sjtLvpd5ojrezAyfZ1+0sStw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-router-dom/-/react-router-dom-6.3.0.tgz}
+    id: registry.npmmirror.com/react-router-dom/6.3.0
+    name: react-router-dom
+    version: 6.3.0
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      history: registry.npmmirror.com/history/5.3.0
+      react: registry.npmmirror.com/react/18.2.0
+      react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
+      react-router: registry.npmmirror.com/react-router/6.3.0_react@18.2.0
+    dev: false
+
+  registry.npmmirror.com/react-router/6.3.0_react@18.2.0:
+    resolution: {integrity: sha512-7Wh1DzVQ+tlFjkeo+ujvjSqSJmkt1+8JO+T5xklPlgrh70y7ogx75ODRW0ThWhY7S+6yEDks8TYrtQe/aoboBQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-router/-/react-router-6.3.0.tgz}
+    id: registry.npmmirror.com/react-router/6.3.0
+    name: react-router
+    version: 6.3.0
+    peerDependencies:
+      react: '>=16.8'
+    dependencies:
+      history: registry.npmmirror.com/history/5.3.0
+      react: registry.npmmirror.com/react/18.2.0
+    dev: false
+
   registry.npmmirror.com/react/18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react/-/react-18.2.0.tgz}
     name: react
@@ -3092,6 +3138,12 @@ packages:
       indent-string: registry.npmmirror.com/indent-string/4.0.0
       strip-indent: registry.npmmirror.com/strip-indent/3.0.0
     dev: true
+
+  registry.npmmirror.com/regenerator-runtime/0.13.9:
+    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz}
+    name: regenerator-runtime
+    version: 0.13.9
+    dev: false
 
   registry.npmmirror.com/require-directory/2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/require-directory/-/require-directory-2.1.1.tgz}
